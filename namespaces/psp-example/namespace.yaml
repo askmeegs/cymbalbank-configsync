@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: psp-example
-  annotations:
-    configsync.gke.io/cluster-name-selector: cymbal-test
