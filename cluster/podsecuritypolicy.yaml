@@ -1,9 +1,9 @@
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
-  name: userservice-psp
+  name: psp
 spec:
-  privileged: false  # Prevents creation of privileged Pods
+  privileged: false
   seLinux:
     rule: RunAsAny
   supplementalGroups:
