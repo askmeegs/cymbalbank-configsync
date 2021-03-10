@@ -1,0 +1,15 @@
+# ROOT_REPO/namespaces/NAMESPACE/repo-sync.yaml
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: balancereader
+spec:
+  git:
+    repo: https://github.com/askmeegs/cymbalbank-config-balancereader
+    revision: HEAD
+    branch: main
+    dir: "/"
+    auth: none
+    secretRef:
+      name: cymbalsecret

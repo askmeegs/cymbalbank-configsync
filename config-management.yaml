@@ -5,9 +5,10 @@ kind: ConfigManagement
 metadata:
   name: config-management
 spec:
+  enableMultiRepo: true
   clusterName: cymbal-test-eu
-  git:
-    syncRepo: https://github.com/askmeegs/cymbalbank-configsync
-    syncBranch: main
-    secretType: none
-    policyDir: "/"
+  # git:
+  #   syncRepo: https://github.com/askmeegs/cymbalbank-configsync
+  #   syncBranch: main
+  #   secretType: none
+  #   policyDir: "/"
