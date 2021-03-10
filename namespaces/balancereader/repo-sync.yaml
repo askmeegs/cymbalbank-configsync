@@ -10,6 +10,6 @@ spec:
     revision: HEAD
     branch: main
     dir: "/"
-    auth: token
+    auth: none
     secretRef:
       name: git-creds
