@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: balancereader
   annotations:
-    configsync.gke.io/cluster-name-selector: cymbal-test, cymbal-test-eu
+    configsync.gke.io/cluster-name-selector: cymbal-test,cymbal-test-eu
