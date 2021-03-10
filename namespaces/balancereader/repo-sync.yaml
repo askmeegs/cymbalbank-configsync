@@ -10,6 +10,6 @@ spec:
     revision: HEAD
     branch: main
     dir: "/"
-    auth: none
+    auth: token
     secretRef:
       name: cymbalsecret
