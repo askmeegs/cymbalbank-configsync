@@ -58,6 +58,22 @@ spec:
   resources:
     requests:
       memory: 400Mi
+# Megan added this - to export to Cloud Ops
+  containers:
+  - image: gcr.io/stackdriver-prometheus/stackdriver-prometheus-sidecar:0.8.2
+    args:
+    - "--stackdriver.project-id=megan-fall20"
+    - "--stackdriver.kubernetes.location=us-west4-a"
+    - "--stackdriver.kubernetes.cluster-name=cymbal-test-eu"
+    - "--prometheus.wal-directory=/prometheus/wal"
+    imagePullPolicy: Always
+    name: sidecar
+    ports:
+    - containerPort: 9091
+      name: sidecar
+    volumeMounts:
+    - mountPath: /prometheus
+      name: prometheus-acm-db
 ---
 apiVersion: v1
 kind: Service
