@@ -11,5 +11,5 @@ spec:
     branch: main
     dir: "/"
     auth: none
-    secretRef:
-      name: git-creds
+    # secretRef:
+    #   name: git-creds
